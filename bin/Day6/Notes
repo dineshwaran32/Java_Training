@@ -1,0 +1,61 @@
+Collection is an interface that holds many inbuild or pre-build functions and methods to manipulate access,store and retrieve objects stored in an collection entity
+
+collections are heterogeneous
+treemap & treeset are heterogeneous
+
+
+list  --arraylist , --linkedlist , --vector 
+										~stack
+										
+										
+set   --hashset 		, --sortedset , --navigableset (both sorted & navigable set implemented by preset)
+		~linkedhashset			~ preset
+		
+	
+queue  --priority queue , --blocking queue 
+								~priority-blocking queue
+								
+								
+map    --key value pair    
+	-- hashmap   			--identity has map		       --sorted map					--hashtable (attribute file named properties)
+		~linked hash map		~weak identity hashmap			~navigation map				~dictionary (both are legacy)
+																  ~~tree map  
+																
+														
+GC - Garbage collection		
+		~ done by JVM
+		~ mark and sweep algorithm
+		~ in identify hash map calls to clear it asks to JVM and delete it but in weak identity hashmap when calls to clear the GC it clears without asking to JVM
+		 		
+vector (for old class)
+
+
+sorting
+	- natural order (comparable class)
+	- user defined order (comparator class)
+	
+enumarator
+  	- used for legacy classes (vector , dictionary , hashtable)
+  	- goes forward only
+iterator
+	- goes both forward and backward
+	- it was used to read but not delete because it dont know
+list-iterator 
+	- similar to iterator
+	- remove element is possible
+	- monstly used in list class
+
+	
+	
+	
+
+
+UTILITY CLASS
+			-- like an abstract
+			-- only store the method		 -> array
+											/	
+in collection there are 2 utility classes  -
+											\
+											 -> collection
+
+collections are usally used as carrier objects hence they implement serializable and clonable by default

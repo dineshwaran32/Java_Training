@@ -1,0 +1,11 @@
+Signature of a method 
+		-- same argument , same datatype
+		-- name of the method
+		-- length of the argument
+		-- return type
+		-- datatype of the argument
+
+
+when the child class has a method with the same signature as the method in the parent class
+then the child class object always implement the method definition in its own class 
+this is calling morphism through overriding
